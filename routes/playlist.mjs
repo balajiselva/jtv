@@ -7,7 +7,7 @@ import playlist from "../utils/genPlaylist.mjs";
 
 
 import jsonPlaylist from "../utils/getJsonPlaylist.mjs";
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 80;
 
 router.get("/playlist", async (req, res) => {
   res.contentType("application/vnd.apple.mpegurl");
