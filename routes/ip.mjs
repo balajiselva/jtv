@@ -2,7 +2,7 @@ import express from "express";
 import fs from "fs";
 import fetch from "node-fetch";
 const router = express.Router();
-const port = process.env.PORT || 3500;
+const port = process.env.PORT || 80;
 
 router.post("/ip", (req, res) => {
   if (req.body.ip == "") return res.redirect("admin.html?error=ip not dound");
